@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Homepage = () => {
   return (
-    <div className="h-full pt-4 md:pt-2 lg:pt-0 grid justify-center items-center gap-4 grid-cols-1 md:grid-cols-2 2xl:gap-0 px-4 sm:px-8 md:px-12">
+    <div className="h-full py-4 grid justify-center items-center gap-4 grid-cols-1 md:grid-cols-2 2xl:gap-0 px-4 sm:px-8 md:px-12">
       <Image
         src="/hero.png"
         alt="hero image"
