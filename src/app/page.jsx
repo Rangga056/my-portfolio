@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Homepage = () => {
   return (
-    <div className="h-full py-4 grid justify-center items-center gap-4 grid-cols-1 md:grid-cols-2 2xl:gap-0 px-4 sm:px-8 md:px-12">
+    <div className="h-full py-4 flex flex-col lg:flex-row justify-center items-center gap-4 2xl:gap-0 px-4 sm:px-8 md:px-12">
       <Image
         src="/hero.png"
         alt="hero image"
@@ -12,7 +12,7 @@ const Homepage = () => {
       />
       <div className="flex flex-col gap-4 items-center justify-center z-10">
         <h1 className="font-bold text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px]">
-          Crafting The Best Web Experiences, Developing Tomorrow.
+          Crafting The Best Experiences, Developing Tomorrow.
         </h1>
         <p className="text-[20px] font-normal leading-[30px] tracking-[2%]">
           Welcome to my digital portfolio, a convergence of innovation and

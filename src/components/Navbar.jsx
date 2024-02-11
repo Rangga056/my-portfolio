@@ -68,7 +68,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-24 flex items-center justify-between px-4 sm:px-8 md:px-12 text-xl">
+    <div className="h-24 py-4 flex items-center justify-between px-4 sm:px-8 md:px-12 text-xl">
       <div className="md:hidden lg:flex lg:justify-center">
         <Link
           href="/"
