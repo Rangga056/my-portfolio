@@ -8,8 +8,8 @@ body {
 }
 
 .center {
-  top: 20px;
-  bottom: 50%;
+  top: 150px;
+  left: 20%;
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -29,18 +29,7 @@ body {
     inset 200px 200px 0 0px #784ba8,
     inset 300px 300px 0 0px #2b86c5;
   mix-blend-mode: color-dodge;
-  animation: move 20s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
-}
-
-@keyframes move {
-  from {
-    transform: translate(-100px, -50px) rotate(-90deg);
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-  }
-
-  to {
-    transform: translate(500px, 100px) rotate(-10deg);
-    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-  }
+  transform: translate(-100px, -50px) rotate(-90deg);
+  border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
 }
