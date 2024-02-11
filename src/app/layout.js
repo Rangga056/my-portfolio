@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,11 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.variable}>
-        <div className="w-screen h-screen bg-transparent text-black max-w-[1440px] m-auto">
-          <div className="h-24">
-            <Navbar />
-          </div>
-          <div className="h-[calc(100dvh-6rem)]">{children}</div>
+        <div className="flex h-screen flex-col pt-3">
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
