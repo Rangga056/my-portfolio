@@ -8,7 +8,7 @@ body {
 }
 
 .center {
-  top: 150px;
+  top: 110px;
   left: 20%;
   transform: translateX(-50%) translateY(-50%);
 }
@@ -29,4 +29,10 @@ body {
   mix-blend-mode: color-dodge;
   transform: translate(-100px, -50px) rotate(-90deg);
   border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+}
+
+@layer utilities {
+  .wrapper {
+    @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
+  }
 }

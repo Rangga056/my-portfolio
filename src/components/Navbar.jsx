@@ -70,7 +70,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-24 py-4 flex items-center justify-between px-4 sm:px-8 md:px-12 text-xl">
+    <div className="wrapper h-24 py-4 flex items-center justify-between text-xl">
       <div className="md:hidden lg:flex lg:justify-center">
         <Link
           href="/"
@@ -101,7 +101,7 @@ const Navbar = () => {
       </div>
       <div className="md:hidden">
         <button
-          className="w-10 h-8 flex flex-col gap-2 z-50 relative"
+          className="w-10 h-8 flex flex-col gap-2 z-[70] relative"
           onClick={() => setOpen((prev) => !prev)}
         >
           <motion.div
@@ -125,7 +125,7 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-full bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
+            className="absolute top-0 left-0 w-screen h-full bg-black text-white flex flex-col items-center justify-center gap-14 text-4xl z-[60]"
           >
             {links.map((link) => (
               <motion.div variants={listItemVariants} key={link.title}>

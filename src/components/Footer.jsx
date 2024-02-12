@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="wrapper">
       <div className="pt-10 flex items-center justify-between flex-col gap-4 p-5 text-center sm:flex-row">
         <Link href="/" className="flex items-center gap-2">
           <Image
