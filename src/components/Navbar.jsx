@@ -21,7 +21,8 @@ const Navbar = () => {
       rotate: 0,
     },
     opened: {
-      rotate: 38,
+      y: -1.5,
+      rotate: 45,
       backgroundColor: "rgb(255,255,255)",
     },
   };
@@ -38,7 +39,8 @@ const Navbar = () => {
       rotate: 0,
     },
     opened: {
-      rotate: -38,
+      y: 1.5,
+      rotate: -45,
       backgroundColor: "rgb(255,255,255)",
     },
   };

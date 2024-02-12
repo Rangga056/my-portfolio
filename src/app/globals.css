@@ -15,8 +15,6 @@ body {
 
 .blob {
   position: absolute;
-  width: 520px;
-  height: 520px;
   background: linear-gradient(
     180deg,
     rgba(47, 184, 255, 0.42) 31.77%,
@@ -29,7 +27,6 @@ body {
     inset 200px 200px 0 0px #784ba8,
     inset 300px 300px 0 0px #2b86c5;
   mix-blend-mode: color-dodge;
-  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
   transform: translate(-100px, -50px) rotate(-90deg);
   border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
 }

@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.variable}>
         <div className="flex h-screen flex-col pt-3">
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main className="">{children}</main>
           <Footer />
         </div>
       </body>
