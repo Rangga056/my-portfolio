@@ -20,8 +20,8 @@ const TransitionProvider = ({ children }) => {
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-7xl capitalize cursor-default z-[90] w-fit h-fit"
+          tdiransition={{ duration: 0.7, ease: "easeOut" }}
+          className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-5xl md:text-6xl lg:text-7xl capitalize cursor-default z-[90] w-fit h-fit leading-none "
         >
           {pathName === "/" ? "home" : pathName.substring(1)}
         </motion.div>

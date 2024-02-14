@@ -5,6 +5,15 @@
 body {
   font-family: var(--font-poppins);
   color: black;
+  background: linear-gradient(
+    0deg,
+    rgba(240, 253, 244, 1) 0%,
+    rgba(239, 246, 255, 1) 100%
+  );
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .center {
