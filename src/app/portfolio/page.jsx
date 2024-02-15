@@ -86,7 +86,11 @@ const PortfolioPage = () => {
                     <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                       {item.desc}
                     </p>
-                    <Link href={item.link} className="flex justify-start">
+                    <Link
+                      href={item.link}
+                      target="_blank"
+                      className="flex justify-start"
+                    >
                       <button className="p-4 text-md  lg:text-lg bg-black text-white font-semibold m-4 rounded-lg">
                         {item.id === 2 ? "See Code" : "See Demo"}
                       </button>{" "}
