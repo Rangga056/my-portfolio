@@ -44,7 +44,7 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="wrapper min-h-[calc(100dvh-6rem)] h-full flex flex-col lg:flex-row">
+      <div className="wrapper h-full flex flex-col lg:flex-row">
         {/* TEXT CONTAINER */}
         <div className="h-1/3 md:h-1/2 lg:h-full lg:w-1/2 flex justify-center items-center text-center text-6xl">
           <div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="h-2/3 md:h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-6 justify-center p-16 3xl:p-20"
+          className="h-[800px] lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-6 md:justify-center p-16 3xl:p-20"
         >
           <span>Dear Eclipse Dev,</span>
           <textarea
