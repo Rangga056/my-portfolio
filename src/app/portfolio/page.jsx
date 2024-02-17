@@ -57,13 +57,13 @@ const PortfolioPage = () => {
           {" "}
           My Works
         </div>
-        <div className="sticky top-0 flex h-screen gap-6 items-center overflow-hidden">
+        <div className="sticky top-0 flex h-screen gap-6 items-center overflow-x-scroll snap-x">
           <motion.div style={{ x }} className="flex">
             <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-100 to-red-100" />
             {items.map((item) => (
               <div
                 key={item.id}
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                className={`h-screen snap-center w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
               >
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 items-center text-black">
                   <div

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behaviour: smooth;
+}
+
 body {
   font-family: var(--font-poppins);
   color: black;
