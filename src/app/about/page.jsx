@@ -1,6 +1,8 @@
 "use client";
 
 import Brain from "@/components/Brain";
+import SkillItem from "@/components/SkillItem";
+import { skills } from "../../constant";
 import { motion, useScroll, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -12,6 +14,7 @@ const AboutPage = () => {
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
+  console.table(skills);
   return (
     <motion.div
       className="md:h-[calc(100vh-6rem)] wrapper p-4"
@@ -77,39 +80,10 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Typescript
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Python
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                NodeJS
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                React
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                NextJS
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                MongoDB
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Tailwind{" "}
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Redux
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Git
-              </div>{" "}
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Firebase
-              </div>{" "}
+              {/* Skill list */}
+              {skills.map((item) => (
+                <SkillItem key={item.index} skillName={item.name} />
+              ))}
             </motion.div>
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -148,9 +122,9 @@ const AboutPage = () => {
               Experience
             </motion.h1>
             <motion.span
-            initial={{ x: "-300px" }}
-            animate={isExperienceRefInView ? { x: "0" } : {}}
-            className="italic text-lg text-gray-500"
+              initial={{ x: "-300px" }}
+              animate={isExperienceRefInView ? { x: "0" } : {}}
+              className="italic text-lg text-gray-500"
             >
               Currently i have no proffesional experience yet
             </motion.span>
